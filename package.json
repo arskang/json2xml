@@ -1,6 +1,6 @@
 {
   "name": "@arskang/json2xml",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Convierte un objeto en xml",
   "main": "index.js",
   "scripts": {

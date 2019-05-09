@@ -1,0 +1,1 @@
+module.exports = require('./lib/json_to_xml');

@@ -2,7 +2,7 @@
 
 ## Install
 ```
-npm install xml_to_json
+npm i @arskang/json2xml
 ```
 
 ## Test

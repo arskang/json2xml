@@ -13,7 +13,7 @@ npm test
 ## Ejemplos de uso
 
 ```javascript
-const json2xml = require('@arskang/json2xml');
+const json_to_xml = require('../index');
 
 const objeto = {
     "persona:Hombre": {
@@ -50,7 +50,7 @@ const objeto = {
 #### Ejemplo 1
 ```javascript
 // Objeto sin opciones
-json2xml(objeto);
+json_to_xml(objeto);
 ```
 
 #### Resultado 1
@@ -88,7 +88,7 @@ json2xml(objeto);
 #### Ejemplo 2
 ```javascript
 // Con Header
-json2xml(objeto, { header: true });
+json_to_xml(objeto, { header: true });
 ```
 
 #### Resultado 2
@@ -127,7 +127,7 @@ json2xml(objeto, { header: true });
 #### Ejemplo 3
 ```javascript
 // Con Header y Atributos
-json2xml(objeto, { header: true });
+json_to_xml(objeto, { header: true });
 ```
 
 #### Resultado 3

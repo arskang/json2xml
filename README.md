@@ -13,7 +13,7 @@ npm test
 ## Ejemplos de uso
 
 ```javascript
-const json2xml = require('../index');
+const json2xml = require('@arskang/json2xml');
 
 const objeto = {
     "persona:Hombre": {

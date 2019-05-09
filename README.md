@@ -51,10 +51,10 @@ const objeto = {
 ```javascript
 // Objeto sin opciones
 json_to_xml(objeto);
+```
 
-// Resultado
-/*
-
+#### Resultado 1
+```xml
 <persona:Hombre>
     <$>
         <nombre>Juanito</nombre>
@@ -83,18 +83,16 @@ json_to_xml(objeto);
     </$>
 </persona>
 <nada />
-
-*/
 ```
 
 #### Ejemplo 2
 ```javascript
 // Con Header
 json_to_xml(objeto, { header: true });
+```
 
-// Resultado
-/*
-
+#### Resultado 2
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persona:Hombre>
     <$>
@@ -124,18 +122,16 @@ json_to_xml(objeto, { header: true });
     </$>
 </persona>
 <nada />
-
-*/
 ```
 
 #### Ejemplo 3
 ```javascript
 // Con Header y Atributos
 json_to_xml(objeto, { header: true });
+```
 
-// Resultado
-/*
-
+#### Resultado 3
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persona:Hombre nombre="Juanito" apellido="Dododo" edad="100">
     <vestimenta>
@@ -148,6 +144,4 @@ json_to_xml(objeto, { header: true });
 </persona:Hombre>
 <persona nombre="Desconocido" />
 <nada />
-
-*/
 ```

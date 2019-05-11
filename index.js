@@ -1,1 +1,1 @@
-module.exports = require('./lib/json_to_xml');
+module.exports = require('./lib/json2xml');

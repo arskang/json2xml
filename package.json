@@ -1,11 +1,22 @@
 {
   "name": "@arskang/json2xml",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convierte un objeto en xml",
   "main": "index.js",
   "scripts": {
     "test": "node ./test/test.js"
   },
   "author": "Edder Silva",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arskang/json2xml"
+  },
+  "homepage": "https://github.com/arskang/json2xml",
+  "keywords": [
+    "json2xml",
+    "jsontoxml",
+    "json to xml",
+    "json 2 xml"
+  ]
 }

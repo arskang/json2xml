@@ -20,6 +20,30 @@ const objeto = {
                     color: "Blanco"
                 }
             },
+            articulos: [
+                {
+                    $: {
+                        cantidad: 1
+                    },
+                    audifonos: {
+                        $: {
+                            tipo: 'Bluetooth'
+                        }
+                    }
+                },
+                {
+                    libros: [
+                        {
+                            autor: 'Patrick Rothfuss',
+                            saga: 'Crónica del Asesino de Reyes'
+                        },
+                        {
+                            autor: 'George R.R. Martin',
+                            saga: 'Canción de Hielo y Fuego'
+                        }
+                    ]
+                }
+            ],
             caperuza: 'Roja'
         }
     },

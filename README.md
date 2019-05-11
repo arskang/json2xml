@@ -35,6 +35,30 @@ const objeto = {
                     color: "Blanco"
                 }
             },
+            articulos: [
+                {
+                    $: {
+                        cantidad: 1
+                    },
+                    audifonos: {
+                        $: {
+                            tipo: 'Bluetooth'
+                        }
+                    }
+                },
+                {
+                    libros: [
+                        {
+                            autor: 'Patrick Rothfuss',
+                            saga: 'Crónica del Asesino de Reyes'
+                        },
+                        {
+                            autor: 'George R.R. Martin',
+                            saga: 'Canción de Hielo y Fuego'
+                        }
+                    ]
+                }
+            ],
             caperuza: 'Roja'
         }
     },
@@ -74,14 +98,34 @@ json2xml(objeto);
                 <color>Blanco</color>
             </$>
         </camiseta>
-        <caperuza>Roja</caperuza>
-    </vestimenta>
+    <articulos>
+        <$>
+            <cantidad>1</cantidad>
+        </$>
+        <audifonos>
+            <$>
+                <tipo>Bluetooth</tipo>
+            </$>
+        </audifonos>
+    </articulos>
+    <articulos>
+        <libros>
+            <autor>Patrick Rothfuss</autor>
+            <saga>Crónica del Asesino de Reyes</saga>
+        </libros>
+        <libros>
+            <autor>George R.R. Martin</autor>
+            <saga>Canción de Hielo y Fuego</saga>
+        </libros>
+    </articulos>
+    <caperuza>Roja</caperuza>
+</vestimenta>
 </persona:Hombre>
-<persona>
-    <$>
-        <nombre>Desconocido</nombre>
-    </$>
-</persona>
+    <persona>
+        <$>
+            <nombre>Desconocido</nombre>
+        </$>
+    </persona>
 <nada />
 ```
 
@@ -113,14 +157,34 @@ json2xml(objeto, { header: true });
                 <color>Blanco</color>
             </$>
         </camiseta>
-        <caperuza>Roja</caperuza>
-    </vestimenta>
+    <articulos>
+        <$>
+            <cantidad>1</cantidad>
+        </$>
+        <audifonos>
+            <$>
+                <tipo>Bluetooth</tipo>
+            </$>
+        </audifonos>
+    </articulos>
+    <articulos>
+        <libros>
+            <autor>Patrick Rothfuss</autor>
+            <saga>Crónica del Asesino de Reyes</saga>
+        </libros>
+        <libros>
+            <autor>George R.R. Martin</autor>
+            <saga>Canción de Hielo y Fuego</saga>
+        </libros>
+    </articulos>
+    <caperuza>Roja</caperuza>
+</vestimenta>
 </persona:Hombre>
-<persona>
-    <$>
-        <nombre>Desconocido</nombre>
-    </$>
-</persona>
+    <persona>
+        <$>
+            <nombre>Desconocido</nombre>
+        </$>
+    </persona>
 <nada />
 ```
 
@@ -139,6 +203,19 @@ json2xml(objeto,  { header: true, attribute: '$' });
             <marca>Pirata</marca>
         </pantalon>
         <camiseta color="Blanco" />
+        <articulos cantidad="1">
+            <audifonos tipo="Bluetooth" />
+        </articulos>
+        <articulos>
+            <libros>
+                <autor>Patrick Rothfuss</autor>
+                <saga>Crónica del Asesino de Reyes</saga>
+            </libros>
+            <libros>
+                <autor>George R.R. Martin</autor>
+                <saga>Canción de Hielo y Fuego</saga>
+            </libros>
+        </articulos>
         <caperuza>Roja</caperuza>
     </vestimenta>
 </persona:Hombre>
